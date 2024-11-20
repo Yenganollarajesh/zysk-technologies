@@ -4,7 +4,7 @@ import './Header.css';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-// import Socialproofsection from "./Socialproofsection"
+import Socialproofsection from "./Socialproofsection"
 // import Featuressection from "./Featuressection"
 // import Testimonialsection from "./Testimonialsection"
 // import Advancedfeatures from "./Advancedfeatures"
@@ -93,8 +93,8 @@ const Header = () => {
                         alt="stats"
                     />
                 </div>
-                {/* <Socialproofsection/>
-                <Featuressection/>
+                <Socialproofsection/>
+               {/* <Featuressection/>
                 <Testimonialsection/>
                 <Advancedfeatures/>
                 <FaqSection/> */}
