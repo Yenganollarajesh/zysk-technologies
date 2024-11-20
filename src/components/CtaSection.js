@@ -1,6 +1,5 @@
 import React from "react";
 import "./CtaSection.css"
-
 export default function CtaSection() {
     return (
         <div className="content">

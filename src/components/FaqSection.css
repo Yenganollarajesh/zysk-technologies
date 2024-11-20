@@ -2,13 +2,11 @@
     width: 100%;
     margin-top: 30px;
 }
-
 .faq-item {
     margin-bottom: 20px;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-
 .faq-question {
     display: flex;
     justify-content: space-between;

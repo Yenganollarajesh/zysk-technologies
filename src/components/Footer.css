@@ -1,4 +1,3 @@
-/* Footer container styling */
 .footer-main-container {
     padding: 20px;
     display: flex;
@@ -46,8 +45,6 @@
          
     }
 }
-
-/* Footer bottom styling */
 .footer-bottom {
     display: flex;
     justify-content: space-between;

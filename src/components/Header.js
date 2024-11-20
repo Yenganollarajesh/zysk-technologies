@@ -16,23 +16,23 @@ import Footer from "./Footer"
 
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);   
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenuToggle = () => {
-        setMenuOpen(!menuOpen);  // Toggle the menu state
+        setMenuOpen(!menuOpen);
     };
 
     const profile = require('./images/rajesh photo.jpeg');
-     
+
     const untitledUi = require("./images/Untitled Ul.png")
-    const stats=require('./images/Hero header section.png')
-    const stats2=require('./images/Screenshot 2024-11-19 233531.png')
+    const stats = require('./images/Hero header section.png')
+    const stats2 = require('./images/Screenshot 2024-11-19 233531.png')
 
     return (
         <div>
             <header className="header">
                 <div className="header-left">
-                    {/* Left content including the profile image and message */}
+
                     <div className="header-profile">
                         <img
                             className="profile-photo1"
@@ -42,7 +42,7 @@ const Header = () => {
                         <p className="message">Untitled Message</p>
                     </div>
 
-                    {/* Navigation links */}
+
                     <nav className={`navigation ${menuOpen ? 'open' : ''}`}>
                         <ul>
                             <li><a href="#home"  >Home</a></li>
@@ -53,12 +53,12 @@ const Header = () => {
                     </nav>
                 </div>
 
-                {/* Menu Icon (visible only on small screens) */}
+
                 <div className="menu-icon" onClick={handleMenuToggle}>
                     <span className="hamburger-icon">☰</span>
                 </div>
 
-                {/* Right profile image (only for large screens) */}
+
                 <div className="header-right">
                     <img
                         className="profile-photo"
@@ -85,23 +85,23 @@ const Header = () => {
                 </div>
                 <div className='stats-container'>
                     <img
-                         className='stats-img'
+                        className='stats-img'
                         src={stats}
                         alt="stats"
                     />
                 </div>
                 <div className='stats-container2'>
                     <img
-                         className='stats-img'
+                        className='stats-img'
                         src={stats2}
                         alt="stats"
                     />
                 </div>
-                <Socialproofsection/>
-               <Featuressection/>
-                 <Testimonialsection/>
-                   <Advancedfeatures/>
-                <FaqSection/>
+                <Socialproofsection />
+                <Featuressection />
+                <Testimonialsection />
+                <Advancedfeatures />
+                <FaqSection />
                 <Blogsection />
                 <CtaSection />
                 <Footer />

@@ -36,7 +36,7 @@ export default function Blogsection() {
     return (
         <div className="blog-section">
             <div className="blog-header">
-                <div>
+                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start"}}>
                     <p className="header-subtitle">Our Blog</p>
                     <h1 className="header-title">Latest Blog Posts</h1>
                     <p className="header-description">Tools and strategies modern teams need to help their companies grow.</p>
@@ -66,7 +66,6 @@ export default function Blogsection() {
                     </div>
                 ))}
             </div>
-
             <button className="view-all-button mobile-button">View All Posts</button>
         </div>
     );

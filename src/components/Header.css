@@ -1,4 +1,3 @@
-/* General Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -17,7 +16,7 @@
 
 .message {
     margin-right: 2vw;
-    font-size: 2vw; /* Fluid font size */
+    font-size: 2vw; 
     font-weight: bold;
 }
 
@@ -35,14 +34,14 @@
 .navigation a {
     text-decoration: none;
     color: #333;
-    font-size: 1.2vw; /* Fluid font size for navigation links */
+    font-size: 1.2vw;
 }
 
 .navigation a:hover {
     color: #007bff;
 }
 
-/* Profile photo styles */
+ 
 .header-profile {
     display: flex;
     align-items: center;
@@ -60,18 +59,18 @@
     border: 2px solid #007bff;
 }
 
-/* Right profile image (for larger screens) */
+ 
 .header-right img {
-    width: 4vw;  /* Use a smaller size for right-side profile image */
+    width: 4vw;   
     height: 4vw;
 }
 
-/* Mobile-specific styles */
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 5%; /* More padding on mobile */
+        padding: 5%;
     }
 
     .header-left {
@@ -79,19 +78,14 @@
         align-items: flex-start;
         width: 100%;
     }
-
-    /* Hide the profile image in mobile view */
     .header-right {
         display: none;
     }
 
-    /* Hide the navigation links by default on mobile */
     .navigation {
         display: none;
         width: 100%;
     }
-
-    /* Show the menu icon on small screens */
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -104,14 +98,10 @@
     .hamburger-icon {
         font-size: 5vw;
     }
-
-    /* Mobile menu when toggled */
     .navigation.open {
         display: block;
         width: 100%;
     }
-
-    /* Style for the mobile menu */
     .navigation ul {
         list-style-type: none;
         padding: 0;
@@ -126,7 +116,7 @@
     }
 
     .navigation a {
-        font-size: 2vw;  /* Larger font size for mobile navigation */
+        font-size: 2vw;
         color: #333;
         text-decoration: none;
         padding: 1vw;
@@ -139,14 +129,13 @@
     }
 }
 
-/* Desktop view (above 768px) */
 @media (min-width: 769px) {
     .menu-icon {
-        display: none; /* Hide the menu icon on larger screens */
+        display: none; 
     }
 
     .navigation {
-        display: flex; /* Always show the nav links on desktop */
+        display: flex;  
     }
 
     .navigation ul {
@@ -154,18 +143,16 @@
     }
 
     .header-right {
-        display: block; /* Show the profile image on desktop */
+        display: block;  
     }
 }
-
-/* Content section with responsive design */
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 5%;  /* Padding that scales with screen size */
+    padding: 5%;
 }
 
 .content-box {
@@ -187,7 +174,7 @@
 }
 
 .contentpara {
-    font-size: 0.8vw;  /* Fluid font size for headings */
+    font-size: 0.8vw;
     margin: 0;
     text-align: center;
 }
@@ -241,7 +228,6 @@
     margin-top: 30px;
 }
 
-/* Adjusting text size for mobile */
 @media (max-width: 768px) {
     .content-box {
         width: 100%;
@@ -260,16 +246,13 @@
     }
     .signup-container{
         flex-direction: column;
-        width: 100%;
-         
-        
+        width: 100%;  
     }
     .demo-button{
         order: 2;
         width: 100%;
         margin-top: 10px;
-        margin-right: 0px;
-         
+        margin-right: 0px;  
     }
     .signup-button{
         order: 1;

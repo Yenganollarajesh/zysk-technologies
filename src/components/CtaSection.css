@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 5%;  /* Padding that scales with screen size */
+    padding: 5%;
 }
 
 .analytics-container{
@@ -21,8 +21,6 @@
     margin-top: 25px;
 
 }
-
- 
 
 .get-started-button{
     background-color: #3461eb;

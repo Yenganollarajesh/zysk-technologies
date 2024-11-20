@@ -33,7 +33,6 @@ export default function Footer() {
 
     return (
         <div className="footer-main-container">
-            {/* Footer Sections */}
             <div className="footer-sections">
                 {sections.map((section, index) => (
                     <div key={index} className="footer-section">
@@ -46,8 +45,6 @@ export default function Footer() {
                     </div>
                 ))}
             </div>
-
-            {/* Footer Bottom (Image and Text) */}
             <div className="footer-bottom">
                 <div className="footer-image">
                     <img src={untitledUi} alt="untitledUi" />
