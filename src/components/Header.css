@@ -1,0 +1,284 @@
+/* General Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 5%;  /* Responsive padding */
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.message {
+    margin-right: 2vw;
+    font-size: 2vw; /* Fluid font size */
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-right: 2vw;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2vw; /* Fluid font size for navigation links */
+}
+
+.navigation a:hover {
+    color: #007bff;
+}
+
+/* Profile photo styles */
+.header-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 4vw;  /* Make the profile photo width responsive */
+    height: 4vw;  /* Make the profile photo height responsive */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+/* Right profile image (for larger screens) */
+.header-right img {
+    width: 4vw;  /* Use a smaller size for right-side profile image */
+    height: 4vw;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5%; /* More padding on mobile */
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    /* Hide the profile image in mobile view */
+    .header-right {
+        display: none;
+    }
+
+    /* Hide the navigation links by default on mobile */
+    .navigation {
+        display: none;
+        width: 100%;
+    }
+
+    /* Show the menu icon on small screens */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 5vw;
+        position: absolute;
+        right: 2%;
+        
+    }
+
+    .hamburger-icon {
+        font-size: 5vw;
+    }
+
+    /* Mobile menu when toggled */
+    .navigation.open {
+        display: block;
+        width: 100%;
+    }
+
+    /* Style for the mobile menu */
+    .navigation ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation li {
+        margin-bottom: "1%";
+    }
+
+    .navigation a {
+        font-size: 2vw;  /* Larger font size for mobile navigation */
+        color: #333;
+        text-decoration: none;
+        padding: 1vw;
+        display: block;
+        width: 100%;
+    }
+
+    .navigation a:hover {
+        color: #007bff;
+    }
+}
+
+/* Desktop view (above 768px) */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide the menu icon on larger screens */
+    }
+
+    .navigation {
+        display: flex; /* Always show the nav links on desktop */
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .header-right {
+        display: block; /* Show the profile image on desktop */
+    }
+}
+
+/* Content section with responsive design */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5%;  /* Padding that scales with screen size */
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #34bdeb;
+    padding: 0.3%;
+    width: 100%;
+    max-width: 23%;
+    border-radius: 30px;
+
+}
+
+.inner-box {
+    border: 1px solid #34bdeb;
+    padding: 0.5vw;
+    margin-right: 1vw;
+    border-radius: 30px;
+}
+
+.contentpara {
+    font-size: 0.8vw;  /* Fluid font size for headings */
+    margin: 0;
+    text-align: center;
+}
+
+.analytics-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.analytics-container h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 2px;
+}
+.analytics-container p{
+    width: 65%;
+    text-align: center;
+    font-size: 14px;
+}
+.signup-container{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.signup-button{
+    background-color: #3461eb;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 12px 25px 12px 25px;
+    color: white;
+}
+.demo-button{
+    border-radius: 5px;
+    padding: 12px 25px 12px 25px;
+    border: 1px solid;
+    border-width: 0.1px;
+    margin-right: 10px;
+}
+.stats-container{
+    display: flex;
+}
+
+.stats-container2{
+    display: none;
+}
+.stats-img{
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Adjusting text size for mobile */
+@media (max-width: 768px) {
+    .content-box {
+        width: 100%;
+        max-width: 55%;   
+    }
+
+    .contentpara {
+        font-size: 2vw;  
+    }
+
+    .inner-box {
+        padding: 0.5vw;
+    }
+    .analytics-container h1{
+        font-size: 35px;
+    }
+    .signup-container{
+        flex-direction: column;
+        width: 100%;
+         
+        
+    }
+    .demo-button{
+        order: 2;
+        width: 100%;
+        margin-top: 10px;
+         
+    }
+    .signup-button{
+        order: 1;
+        width: 100%;
+         
+    }
+    .stats-container{
+        display: none;
+    }
+    
+    .stats-container2{
+        display: flex;
+    }
+}
+
+
+
