@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import Socialproofsection from "./Socialproofsection"
-// import Featuressection from "./Featuressection"
+import Featuressection from "./Featuressection"
 // import Testimonialsection from "./Testimonialsection"
 // import Advancedfeatures from "./Advancedfeatures"
 // import FaqSection from "./FaqSection"
@@ -20,7 +20,8 @@ const Header = () => {
     };
 
     const profile = require('./images/rajesh photo.jpeg');
-    const right = require('./images/istockphoto-1437816897-612x612.jpg');
+     
+    const untitledUi = require("./images/Untitled Ul.png")
     const stats=require('./images/Hero header section.png')
     const stats2=require('./images/Screenshot 2024-11-19 233531.png')
 
@@ -31,8 +32,8 @@ const Header = () => {
                     {/* Left content including the profile image and message */}
                     <div className="header-profile">
                         <img
-                            className="profile-photo"
-                            src={right}
+                            className="profile-photo1"
+                            src={untitledUi}
                             alt="Profile"
                         />
                         <p className="message">Untitled Message</p>
@@ -94,8 +95,8 @@ const Header = () => {
                     />
                 </div>
                 <Socialproofsection/>
-               {/* <Featuressection/>
-                <Testimonialsection/>
+               <Featuressection/>
+                 {/* <Testimonialsection/>
                 <Advancedfeatures/>
                 <FaqSection/> */}
             </div>

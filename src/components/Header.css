@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5vw 5%;  /* Responsive padding */
+    padding: 0.3vw 2%;
     background-color: #f4f4f4;
     flex-wrap: wrap;
 }
@@ -47,10 +47,14 @@
     display: flex;
     align-items: center;
 }
-
+.profile-photo1{
+    width: 4vw;   
+    height: 4vw;
+    object-fit: cover;
+}
 .profile-photo {
-    width: 4vw;  /* Make the profile photo width responsive */
-    height: 4vw;  /* Make the profile photo height responsive */
+    width: 4vw;   
+    height: 4vw;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #007bff;
@@ -264,6 +268,7 @@
         order: 2;
         width: 100%;
         margin-top: 10px;
+        margin-right: 0px;
          
     }
     .signup-button{
