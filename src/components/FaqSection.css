@@ -1,0 +1,178 @@
+.faq-list {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.faq-icon {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.questions-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questions-container h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.questions-container p {
+    font-size: 18px;
+    color: #666;
+}
+.stillHaveQuestions-container{
+    text-align: center;
+    margin: 80px;
+}
+
+.stillHaveQuestions-container h1{
+    font-size: 20px;
+}
+
+.stillHaveQuestions-container p{
+    font-size: 18px;
+    color: #666;
+}
+
+.stillHaveQuestions-container button{
+    background-color: blue;
+    color: white;
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+.stillHaveQuestions-container img{
+    height: 15vh;
+    width: 20vw;
+}
+
+ 
+
+
+@media (max-width: 767px) {
+    .faq-list {
+        width: 100%;
+    }
+
+    .faq-question p {
+        font-size: 16px; 
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .faq-icon {
+        font-size: 20px;  
+    }
+
+    .questions-container h1 {
+        font-size: 24px;
+    }
+
+    .questions-container p {
+        font-size: 16px;
+    }
+    .stillHaveQuestions-container img{
+        height: 20vh;
+        width: 50vw;
+    }
+}
+
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .faq-list {
+        width: 60vw;
+    }
+
+    .faq-question p {
+        font-size: 17px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+         
+    }
+
+    .faq-icon {
+        font-size: 22px; 
+    }
+
+    .questions-container h1 {
+        font-size: 26px; 
+    }
+
+    .questions-container p {
+        font-size: 17px; 
+    }
+    .stillHaveQuestions-container img{
+        height: 20vh;
+        width: 30vw;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .faq-list {
+        width: 60vw; 
+    }
+
+    .faq-question p {
+        font-size: 18px; 
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+
+    .faq-icon {
+        font-size: 24px;  
+    }
+
+    .questions-container h1 {
+        font-size: 30px;  
+    }
+
+    .questions-container p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+ 

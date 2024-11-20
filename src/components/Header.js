@@ -8,7 +8,7 @@ import Socialproofsection from "./Socialproofsection"
 import Featuressection from "./Featuressection"
 import Testimonialsection from "./Testimonialsection"
 import Advancedfeatures from "./Advancedfeatures"
-// import FaqSection from "./FaqSection"
+import FaqSection from "./FaqSection"
 
 
 
@@ -98,7 +98,7 @@ const Header = () => {
                <Featuressection/>
                  <Testimonialsection/>
                    <Advancedfeatures/>
-                {/*<FaqSection/> */}
+                <FaqSection/>
             </div>
         </div>
     );
