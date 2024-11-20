@@ -7,7 +7,7 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import Socialproofsection from "./Socialproofsection"
 import Featuressection from "./Featuressection"
 import Testimonialsection from "./Testimonialsection"
-// import Advancedfeatures from "./Advancedfeatures"
+import Advancedfeatures from "./Advancedfeatures"
 // import FaqSection from "./FaqSection"
 
 
@@ -97,8 +97,8 @@ const Header = () => {
                 <Socialproofsection/>
                <Featuressection/>
                  <Testimonialsection/>
-                 {/* <Advancedfeatures/>
-                <FaqSection/> */}
+                   <Advancedfeatures/>
+                {/*<FaqSection/> */}
             </div>
         </div>
     );
