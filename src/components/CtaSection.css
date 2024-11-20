@@ -1,0 +1,69 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5%;  /* Padding that scales with screen size */
+}
+
+.analytics-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.analytics-container p{
+    width: 100%;
+}
+.signup-container{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+ 
+
+.get-started-button{
+    background-color: #3461eb;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 12px 25px 12px 25px;
+    color: white;
+}
+.learn-more-button{
+    border-radius: 5px;
+    padding: 12px 25px 12px 25px;
+    border: 1px solid;
+    border-width: 0.1px;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .analytics-container h1{
+        font-size: 25px;
+    }
+    .signup-container{
+        flex-direction: column;
+        width: 100%;
+         
+        
+    }
+    .learn-more-button{
+        order: 2;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0px;
+         
+    }
+    .get-started-button{
+        order: 1;
+        width: 100%;
+         
+    }
+    
+}
+
+
+

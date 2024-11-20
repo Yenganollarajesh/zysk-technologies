@@ -9,6 +9,9 @@ import Featuressection from "./Featuressection"
 import Testimonialsection from "./Testimonialsection"
 import Advancedfeatures from "./Advancedfeatures"
 import FaqSection from "./FaqSection"
+import Blogsection from "./Blogsection"
+import CtaSection from "./CtaSection"
+import Footer from "./Footer"
 
 
 
@@ -99,6 +102,9 @@ const Header = () => {
                  <Testimonialsection/>
                    <Advancedfeatures/>
                 <FaqSection/>
+                <Blogsection />
+                <CtaSection />
+                <Footer />
             </div>
         </div>
     );
